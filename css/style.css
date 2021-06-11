@@ -1,0 +1,133 @@
+:root {
+    --red: #ff0000;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+
+
+.blanco {
+    color: var(--white);
+}
+
+.black {
+    color: var(--black);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-white-op5 {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.background-image-1 {
+    background-image: url(../images/portada/portada-1.jpg);
+    background-position-y: center;
+}
+
+.width-10 {
+    width: 10%;
+}
+
+.c-rounded {
+    border-radius: 3rem !important;
+}
+
+.c-rounded-1 {
+    border-radius: 1rem !important;
+}
+
+.border-red {
+    border: 2px solid var(--red) ;
+}
+
+.border-red-1 {
+    border: 1px solid var(--red) ;
+}
+
+.c-size {
+    font-size: large;
+}
+
+
+.btn-red {
+    color: var(--white);
+    background-color: var(--red);
+    
+    border-radius: 4rem;
+}
+
+.btn-red:hover {
+    color: var(--white);
+    background-color: #000000;
+    
+    border-radius: 4rem;
+}
+
+.top-10 {
+    position: absolute;
+    top: 10px;
+}
+.bottom-n10 {
+    position: absolute;
+    bottom: 10px;
+} 
+
+.h6 {
+    font-size: 12px;
+}
+
+
+@media (max-width: 576px) {
+    .c-d-sm-none {
+      display: none !important;
+    }
+
+    .c-bg-sm-image {
+        background-image: url(pngwing.com.png);
+        background-size: 100%;
+    }
+    .c-bg-sm-opacity {
+        background-color: rgba(250, 120, 120, 0.6) 
+    }
+
+    
+}
+
+@media (min-width: 576px) {
+    
+
+    .height-100vh {
+        height: 100vh;
+    }
+}
+
+
+/* Botonoes */
+#servicios a, #copy a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Tamaño de fuentes */
+.h1 {
+    font-size: 3rem;
+}
+
+.h2 {
+    font-size: 2rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+}
