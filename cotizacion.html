@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/logos/logo_toyota.ico" type="image/x-icon">
+  <title>Toyota Peru Cotiza tu auto ahora</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="images/logos/toyota-logo-peru-mobile.svg" alt="logo toyota" class="img-fluid" width="100px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="modelos.html">Modelos</a>
+            </li>
+            <li class="nav-item active mx-4">
+              <a class="nav-link" href="cotizacion.html">Cotización online</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item ml-auto px-4">
+              <a class="nav-link" href="#">Necesitas ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section>
+      <div class="container-fluid">
+        <img src="images/portada/portada-2.jpg" alt="" class="img-fluid">
+
+      </div>
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-12 py-5 text-center">
+            <h3>COTIZADOR TOYOTA</h3>
+            <h4>Cotiza el modelo que más te guste.</h4>
+          </div>
+          <div class="col">
+            <form id="form-cotizacin" action="">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-5 offset-lg-1 col-lg-5 ">
+                  <div id="info-cliente" class="form mx-lg-3">
+                    <h5 class="mb-md-4">DATOS DEL CLIENTE</h5>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="tipo-documento" aria-required="true">Tipo de documento</label>
+                      <select class="form-control c-rounded mr-5" name="" id="tipo-documento">
+                        <option> Seleccionar --</option>
+                        <option value="dni">DNI</option>
+                        <option value="carne">Carné de extrangería</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="nro-documento">N° de documento</label>
+                      <input class="form-control c-rounded c-rounded" type="number" name="nro-documento"
+                        id="nro-documento" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="nombres">Nombres</label>
+                      <input class="form-control c-rounded" type="text" name="nombres" id="nombres" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="apellidos">Apellidos</label>
+                      <input class="form-control c-rounded" type="text" name="" id="apellidos" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="correo">Email</label>
+                      <input class="form-control c-rounded" type="email" name="" id="correo" required>
+                    </div>
+                    <p>Proporcione por lo menos un número de contacto</p>
+                    <div class="row">
+                      <div class="form-group col-12 col-md-12 col-lg-6">
+                        <label class="mb-md-3" for="cod-c">Código de ciudad</label>
+                        <input class="form-control c-rounded" type="text" name="cod-c" id="cod-c" required>
+                      </div>
+                      <div class="form-group col-12 col-md-12 col-lg-6">
+                        <label class="mb-md-3" for="tel-contacto">Teléfono</label>
+                        <input class="form-control c-rounded" type="number" name="tel-contacto" id="tel-contacto"
+                          required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="celular">Celular</label>
+                      <input class="form-control c-rounded" type="number" name="" id="celular" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="departamento">Departamento</label>
+                      <input class="form-control c-rounded" type="text" name="" id="departamento" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 col-lg-5 ">
+                  <div id="info-auto" class="form mx-lg-3">
+                    <h5 class="mb-md-4">DATOS DEL VEHÍCULO</h5>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="modelo">Modelo</label>
+                      <input class="form-control c-rounded" type="text" name="modelo" id="modelo" required>
+                    </div>
+                    <div class="form-group">
+                      <label class="mb-md-3" for="color">Color</label>
+                      <input class="form-control c-rounded" type="text" name="color" id="color" required>
+                    </div>
+                    <h6>RED DE CONCESIONARIOS</h5>
+                      <div class="form-group">
+                        <label class="mb-md-3" for="ubicacion">Ubicación</label>
+                        <input class="form-control c-rounded" type="text" name="" id="ubicacion" required>
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-md-3" for="concesionario">Concesionario</label>
+                        <input class="form-control c-rounded" type="email" name="" id="concesionario" required>
+                      </div>
+                      <div class="form-group">
+                        <p>Proporcione por lo menos un número de contacto</p>
+                      </div>
+                      <div class="form-group">
+                        <label class="mb-md-3" for="comentario">Comentario/Observación:</label>
+                        <textarea class="form-control c-rounded-1" name="" id="comentario" cols="30"
+                          rows="7"></textarea>
+                      </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col-11 col-md-10 offset-md-1 offset-lg-1 px-lg-5">
+                      <div class="form-group form-check">
+                        <input class="form-check-input" type="checkbox" name="terminos" id="terminos" required>
+                        <label class="form-check-label h6" for="terminos">Acepto que Toyota utilice mi información para
+                          los nes contenidos en la cláusula. Ver detalle Al enviar el formulario, acepto los
+                          términos y condiciones y la política de privacidad.</label>
+                      </div>
+                      <div class="form-group text-center mt-5">
+                        <input class="btn btn-red" type="submit" value="Enviar formulario">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+      </div>
+
+      </div>
+
+
+    </section>
+
+
+  </header>
+
+
+
+  <footer id="pie-pagina">
+    <div class="container-fluid bg-black pt-5 blanco">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Cotáctate con nostros.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-5 offset-md-1">
+            <h2 class="h1">¿En qué podemos ayudarte?</h2>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col">
+            <h4>Redes sociales</h4>
+            <div class="c-d-sm-none">
+              <i class="px-2 fab fa-facebook-square fa-3x"></i>
+              <i class="px-2 fab fa-instagram fa-3x"></i>
+              <i class="px-2 fab fa-twitter fa-3x"></i>
+              <i class="px-2 fab fa-youtube fa-3x"></i>
+              <i class="px-2 fab fa-linkedin fa-3x"></i>
+            </div>
+
+            <div class="d-md-none">
+              <i class="px-2 fab fa-facebook-square fa-2x"></i>
+              <i class="px-2 fab fa-instagram fa-2x"></i>
+              <i class="px-2 fab fa-twitter fa-2x"></i>
+              <i class="px-2 fab fa-youtube fa-2x"></i>
+              <i class="px-2 fab fa-linkedin fa-2x"></i>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <div id="copy" class="bg-marron blanco">
+          <div class="container py-4">
+            <div class="row align-items-center">
+              <!-- revisar bien, aquí se pone al centro en el eje y a la primera col del &copy -->
+              <div class="col-12 col-md-6 text-center text-md-left order-2 order-md-1">
+                <p class="m-0">&copy; Toyota Perú - Todos los derechos reservados.</p>
+              </div>
+              <div class="col-12 col-md-6 order-1 order-md-2 ">
+                <ul class="nav align-items-center">
+                  <li class="nav-item"><a class=" h6 px-3 mx-0" href="https://www.facebook.com/">Trabaja con
+                      nosotros</a></li>
+                  <li class="nav-item"><a class=" h6 px-3 mx-0" href="https://www.youtube.com/">Términos y
+                      condiciones</a></li>
+                  <li class="nav-item"><a class=" h6 px-3 mx-0" href="www.https://twitter.com/">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item"><a class=" " href="https://www.instagram.com/"><i
+                        class="fab fa-whatsapp fa-2x"></i></a></li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
